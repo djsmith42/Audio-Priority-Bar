@@ -11,3 +11,4 @@ In short:
 
 See [Build from source](README.md#build-from-source) to run the app locally.
 CI tests every pull request automatically.
+
