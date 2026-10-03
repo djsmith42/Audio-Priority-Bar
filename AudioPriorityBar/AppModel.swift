@@ -76,6 +76,8 @@ final class AppModel {
     var remindsWhenMuted: Bool
     var outlinesMenuBarIcon: Bool
     var menuBarDevices: MenuBarDevices
+    var locksOutput: Bool
+    var locksInput: Bool
     /// Called with the devices Automatic mode just switched to because the
     /// hardware changed, output first. Never for the user's own choices.
     var onAutomaticSwitch: (([AudioDevice]) -> Void)?
@@ -129,6 +131,8 @@ final class AppModel {
         remindsWhenMuted = store.remindsWhenMuted
         outlinesMenuBarIcon = store.outlinesMenuBarIcon
         menuBarDevices = store.menuBarDevices
+        locksOutput = store.locksOutput
+        locksInput = store.locksInput
     }
 
     func start() {
@@ -218,7 +222,8 @@ final class AppModel {
             } == true
         if isManualMode {
             if !topologyExplainsChange,
-               let previousDevice, previousDevice.uid != currentUID,
+               role == .input ? locksInput : locksOutput,
+               let previousDevice, let currentUID, previousDevice.uid != currentUID,
                connectedUIDs.contains(previousDevice.uid),
                !isUserPicking() {
                 // macOS or another app moved it, as when AirPods in the ears
