@@ -62,8 +62,6 @@ jobs:
             exit 1
           fi
 
-      - name: Test core
-        run: swift test --package-path AudioPriorityCore
 
       - name: Test app
         run: |

@@ -20,8 +20,6 @@ jobs:
         with:
           xcode-version: "26.6"
 
-      - name: Test core
-        run: swift test --package-path AudioPriorityCore
 
       - name: Test app
         run: |

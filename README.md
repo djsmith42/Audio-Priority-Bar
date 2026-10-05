@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/macOS-14%2B-blue" alt="macOS 14+">
-  <img src="https://img.shields.io/badge/Swift-6-orange" alt="Swift 6">
+  <img src="https://img.shields.io/badge/Objective--C-ARC-blue" alt="Objective-C">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License">
 </p>
 
@@ -253,7 +253,9 @@ substantial. `main` is the latest release; `develop` is next.
 - Work from a fork rather than pushing to this repository.
 - Branch from `develop` and open the pull request against `develop`. GitHub
   bases new pull requests on `main`, so switch it before submitting.
-- Every pull request runs both Swift Testing suites and a universal build.
+- Every pull request runs the XCTest suite and a universal build.
+- The Xcode project is generated: after adding or removing a source file,
+  run `scripts/generate-project.py`.
 - Releases are tagged and published manually. The release workflow signs
   the update feed with the `SPARKLE_PRIVATE_KEY` secret, the Sparkle EdDSA
   key exported with `generate_keys --account app.audioprioritybar -x`.
@@ -269,4 +271,4 @@ Originally created by [tobi](https://github.com/tobi).
 The Jabra GNP framing and pairing-record query are based on
 [jabridge](https://github.com/Watchdog0x/jabridge) by Watchdog0x (Apache-2.0).
 
-Built with SwiftUI, AppKit, CoreAudio, and IOKit.
+Built in Objective-C with AppKit, CoreAudio, and IOKit.

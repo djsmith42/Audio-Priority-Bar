@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F100000000000000000000001"
+               BlueprintIdentifier = "230C7BACC486753105570DD8"
                BuildableName = "AudioPriorityBar.app"
                BlueprintName = "AudioPriorityBar"
                ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
@@ -31,7 +31,7 @@
          <TestableReference skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F100000000000000000000002"
+               BlueprintIdentifier = "BFF8D4F05E66371D929D09EC"
                BuildableName = "AudioPriorityBarTests.xctest"
                BlueprintName = "AudioPriorityBarTests"
                ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
@@ -52,7 +52,7 @@
       <BuildableProductRunnable runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F100000000000000000000001"
+            BlueprintIdentifier = "230C7BACC486753105570DD8"
             BuildableName = "AudioPriorityBar.app"
             BlueprintName = "AudioPriorityBar"
             ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
@@ -68,7 +68,7 @@
       <BuildableProductRunnable runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F100000000000000000000001"
+            BlueprintIdentifier = "230C7BACC486753105570DD8"
             BuildableName = "AudioPriorityBar.app"
             BlueprintName = "AudioPriorityBar"
             ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
