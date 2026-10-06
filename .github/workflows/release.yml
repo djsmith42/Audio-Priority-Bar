@@ -62,10 +62,7 @@ jobs:
             exit 1
           fi
 
-      - name: Test core
-        run: swift test --package-path AudioPriorityCore
-
-      - name: Test app
+      - name: Test
         run: |
           xcodebuild test \
             -project AudioPriorityBar.xcodeproj \

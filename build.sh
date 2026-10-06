@@ -32,6 +32,8 @@ else
   archs=(-arch arm64 -arch x86_64 ONLY_ACTIVE_ARCH=NO)
 fi
 
+"$root/scripts/fetch-sparkle.sh"
+
 xcodebuild \
   -project "$root/AudioPriorityBar.xcodeproj" \
   -scheme AudioPriorityBar \

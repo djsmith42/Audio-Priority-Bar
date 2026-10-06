@@ -8,7 +8,7 @@ output_dir="${OUTPUT_DIR:-$root/release}"
 app="$derived_data/Build/Products/Release/AudioPriorityBar.app"
 zip="$output_dir/AudioPriorityBar.zip"
 appcast="$output_dir/appcast.xml"
-sparkle_bin="$derived_data/SourcePackages/artifacts/sparkle/Sparkle/bin"
+sparkle_bin="$root/Vendor/Sparkle/bin"
 # Served from the newest non-prerelease, so prereleases never reach the feed.
 feed_url="${SPARKLE_FEED_URL:-https://github.com/camguillory/Audio-Priority-Bar/releases/latest/download/appcast.xml}"
 
@@ -33,6 +33,7 @@ fi
 
 rm -rf "$derived_data" "$output_dir"
 mkdir -p "$output_dir"
+"$root/scripts/fetch-sparkle.sh"
 
 xcodebuild \
   -project "$root/AudioPriorityBar.xcodeproj" \

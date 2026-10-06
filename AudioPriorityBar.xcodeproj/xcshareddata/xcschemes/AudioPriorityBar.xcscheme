@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F100000000000000000000001"
+               BlueprintIdentifier = "ACC9652797AB670E77D9DAEA"
                BuildableName = "AudioPriorityBar.app"
                BlueprintName = "AudioPriorityBar"
                ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
@@ -31,7 +31,16 @@
          <TestableReference skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F100000000000000000000002"
+               BlueprintIdentifier = "665AB3AAAF468C4875F7396F"
+               BuildableName = "AudioPriorityCoreTests.xctest"
+               BlueprintName = "AudioPriorityCoreTests"
+               ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F44B0B27DCF89265EF9EC27C"
                BuildableName = "AudioPriorityBarTests.xctest"
                BlueprintName = "AudioPriorityBarTests"
                ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
@@ -50,13 +59,13 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F100000000000000000000001"
-            BuildableName = "AudioPriorityBar.app"
-            BlueprintName = "AudioPriorityBar"
-            ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
-         </BuildableReference>
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ACC9652797AB670E77D9DAEA"
+               BuildableName = "AudioPriorityBar.app"
+               BlueprintName = "AudioPriorityBar"
+               ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
+            </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
@@ -66,13 +75,13 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F100000000000000000000001"
-            BuildableName = "AudioPriorityBar.app"
-            BlueprintName = "AudioPriorityBar"
-            ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
-         </BuildableReference>
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ACC9652797AB670E77D9DAEA"
+               BuildableName = "AudioPriorityBar.app"
+               BlueprintName = "AudioPriorityBar"
+               ReferencedContainer = "container:AudioPriorityBar.xcodeproj">
+            </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction buildConfiguration = "Debug">

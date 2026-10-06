@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/macOS-14%2B-blue" alt="macOS 14+">
-  <img src="https://img.shields.io/badge/Swift-6-orange" alt="Swift 6">
+  <img src="https://img.shields.io/badge/Objective--C-ARC-blue" alt="Objective-C">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License">
 </p>
 
@@ -151,6 +151,8 @@ cd Audio-Priority-Bar
 The universal app is written to `dist/AudioPriorityBar.app`, signed with the
 release certificate when it is in your keychain and ad-hoc otherwise.
 You can also open `AudioPriorityBar.xcodeproj` in Xcode and build with Command-R.
+The first build downloads the pinned [Sparkle](https://sparkle-project.org)
+release into `Vendor/` and checks its SHA-256.
 
 For local development, `./build.sh --dev` builds only your machine's
 architecture in the Debug configuration, which is much faster, and writes
@@ -257,7 +259,7 @@ substantial. `main` is the latest release; `develop` is next.
 - Work from a fork rather than pushing to this repository.
 - Branch from `develop` and open the pull request against `develop`. GitHub
   bases new pull requests on `main`, so switch it before submitting.
-- Every pull request runs both Swift Testing suites and a universal build.
+- Every pull request runs both XCTest suites and a universal build.
 - Releases are tagged and published manually. The release workflow signs
   the update feed with the `SPARKLE_PRIVATE_KEY` secret, the Sparkle EdDSA
   key exported with `generate_keys --account app.audioprioritybar -x`.
@@ -273,4 +275,4 @@ Originally created by [tobi](https://github.com/tobi).
 The Jabra GNP framing and pairing-record query are based on
 [jabridge](https://github.com/Watchdog0x/jabridge) by Watchdog0x (Apache-2.0).
 
-Built with SwiftUI, AppKit, CoreAudio, and IOKit.
+Built in Objective-C with AppKit, CoreAudio, and IOKit.
